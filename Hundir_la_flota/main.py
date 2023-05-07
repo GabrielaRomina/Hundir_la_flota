@@ -40,7 +40,7 @@ if demo == "1":
             time.sleep(1)
             playsound("impacto.mp3")
             while acierto_jugador == True:
-                var.vidas_maquina -= 10
+                var.vidas_maquina -= 1
                 while True:
                     try:
                         fila_disparo = int(input("Qué fila disparas (0-9)?"))
@@ -76,7 +76,7 @@ if demo == "1":
             time.sleep(1)
             playsound("impacto.mp3")
             while acierto_maquina == True:
-                var.vidas -= 10
+                var.vidas -= 1
                 acierto_maquina = fc.disparar(random.randint(0,9), random.randint(0,9), tablero_oculto_maquina, var.tablero_maquina)
                 time.sleep(1)
                 playsound("disparo.mp3")
