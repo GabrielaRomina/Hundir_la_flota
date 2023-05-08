@@ -4,11 +4,12 @@ from playsound import playsound
 import funciones as fc
 import variables as var
 import time
+import clases
 
 print("Bienvenido a HUNDIR LA FLOTA")
 # Se generan dos tableros con barcos y se pregunta si se quiere acceder al juego o a la demo
-tablero_oculto_maquina = fc.generar_barcos_aleatorios()
-tablero_oculto_jugador = fc.generar_barcos_aleatorios()
+tablero_oculto_maquina = clases.maquina.tablero_oculto
+tablero_oculto_jugador = clases.jugador.tablero
 demo = input("Pulsa 1 para jugar. Pulsa cualquier otro carácter para demo.")
 
 # Se inicia el juego
